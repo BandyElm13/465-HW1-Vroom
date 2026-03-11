@@ -2,15 +2,27 @@ using UnityEngine;
 
 public class purple : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private Renderer blockRenderer;
     void Start()
     {
-         GetComponent<Renderer>().material.color = Color.purple;
+        blockRenderer = GetComponent<Renderer>();
+        blockRenderer.material.color = Color.purple;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag("Hand") || other.CompareTag("Controller"))
+        {
+            blockRenderer.enabled = false;
+        }
     }
+    
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Hand") || other.CompareTag("Controller"))
+        {
+            blockRenderer.enabled = true;
+        }
+    }
+    
 }

@@ -8338,6 +8338,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2407641713578847713, guid: 053b486a795067a4f8fc3b755e3cf8b9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2759435932763463881, guid: 053b486a795067a4f8fc3b755e3cf8b9, type: 3}
       propertyPath: m_Name
       value: Purple Block
@@ -8385,8 +8389,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2759435932763463881, guid: 053b486a795067a4f8fc3b755e3cf8b9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1500007619}
   m_SourcePrefab: {fileID: 100100000, guid: 053b486a795067a4f8fc3b755e3cf8b9, type: 3}
+--- !u!1 &1500007618 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2759435932763463881, guid: 053b486a795067a4f8fc3b755e3cf8b9, type: 3}
+  m_PrefabInstance: {fileID: 1500007617}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1500007619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500007618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a762b70d4cd11e8448c9e37a9db4d96a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::purple
 --- !u!1 &1506347390
 GameObject:
   m_ObjectHideFlags: 0
