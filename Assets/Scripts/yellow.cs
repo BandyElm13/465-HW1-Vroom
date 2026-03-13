@@ -2,15 +2,39 @@ using UnityEngine;
 
 public class NewMonoBehaviourScript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private AudioSource audioSource;
+    public Renderer cubeRen;
+    
+    void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+        audioSource.playOnAwake = false;
+        audioSource.Stop();
+    }
     void Start()
     {
-        GetComponent<Renderer>().material.color = Color.yellow;
+        cubeRen = GetComponent<Renderer>();
+        cubeRen.material.color = Color.yellow;
+        audioSource = GetComponent<AudioSource>();
+
+    }
+    public void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject){
+
+            if(other != null)
+            {
+                audioSource.Play();
+            }
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnTriggerExit(Collider other)
     {
-        
+        if(other != null)
+        {
+            audioSource.Stop();
+        }
+
     }
 }
