@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class NewMonoBehaviourScript : MonoBehaviour
 {
-    private AudioSource audioSource;
+    public AudioSource audioSource;
     public Renderer cubeRen;
     
     void Awake()

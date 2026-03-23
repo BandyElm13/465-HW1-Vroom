@@ -14,13 +14,13 @@ public class BlueToolKit : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("XRController"))
+        //if (other.CompareTag("XRController"))
             rend.material.color = Color.white;
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("XRController"))
+        //if (other.CompareTag("XRController"))
             rend.material.color = originalColor;
     }
 }
