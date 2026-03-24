@@ -10652,6 +10652,10 @@ PrefabInstance:
       value: Left Hand Peace Sign
       objectReference: {fileID: 0}
     - target: {fileID: 2928752898436950839, guid: 4ef856f4e7554bd4c97e01ae20e4d976, type: 3}
+      propertyPath: m_HandShapeOrPose
+      value: 
+      objectReference: {fileID: 11400000, guid: e863a2a22d6dda740bd9ee2298b3afd5, type: 2}
+    - target: {fileID: 2928752898436950839, guid: 4ef856f4e7554bd4c97e01ae20e4d976, type: 3}
       propertyPath: m_MinimumHoldTime
       value: 0.1
       objectReference: {fileID: 0}
@@ -10691,6 +10695,10 @@ PrefabInstance:
       propertyPath: m_GesturePerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Right Hand Peace Sign
       objectReference: {fileID: 0}
+    - target: {fileID: 5160200477736941395, guid: 4ef856f4e7554bd4c97e01ae20e4d976, type: 3}
+      propertyPath: m_HandShapeOrPose
+      value: 
+      objectReference: {fileID: 11400000, guid: e863a2a22d6dda740bd9ee2298b3afd5, type: 2}
     - target: {fileID: 5160200477736941395, guid: 4ef856f4e7554bd4c97e01ae20e4d976, type: 3}
       propertyPath: m_MinimumHoldTime
       value: 0.1
